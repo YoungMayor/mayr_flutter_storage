@@ -1,26 +1,37 @@
-name: mayr_flutter_storage
-description: "A new Flutter package project."
-version: 0.0.1
-homepage:
+name: mayr_storage
+description: >-
+  Simple and unified storage solution for Flutter apps.
+  Easily manage SharedPreferences, EncryptedSharedPreferences, and GetStorage with a clean, consistent API.
+version: 0.1.0
+homepage: https://github.com/YoungMayor/mayr_flutter_storage
+repository: https://github.com/YoungMayor/mayr_flutter_storage
+issue_tracker: https://github.com/YoungMayor/mayr_flutter_storage/issues
+documentation: https://github.com/YoungMayor/mayr_flutter_storage/wiki
+license: MIT
 
 environment:
   sdk: ^3.7.0
   flutter: ">=1.17.0"
 
 dependencies:
+  encrypt_shared_preferences: ^0.9.9
   flutter:
     sdk: flutter
+  get_storage: ^2.1.1
+  shared_preferences: ^2.5.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+  faker: ^2.2.0
+  path_provider_platform_interface: ^2.1.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
-flutter:
+# flutter:
 
   # To add assets to your package, add an assets section, like this:
   # assets:
