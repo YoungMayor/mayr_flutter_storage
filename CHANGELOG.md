@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.1.1] - Documentation update
+
+### Added
+- Documented methods
+- `.pubignore` to certain parts
+
+---
+
 ## [0.1.0] - Initial Release
 
 ### Added

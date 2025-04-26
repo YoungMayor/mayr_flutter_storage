@@ -2,9 +2,9 @@ part of './../mayr_storage.dart';
 
 class EncryptSharedPreferencesStorage<ValueT>
     extends PreferencesStorage<ValueT> {
-  final String preferenceKey;
+  final String _preferenceKey;
 
-  EncryptSharedPreferencesStorage(this.preferenceKey);
+  EncryptSharedPreferencesStorage(this._preferenceKey);
 
   @override
   Future<ValueT?> read() async {
@@ -12,13 +12,13 @@ class EncryptSharedPreferencesStorage<ValueT>
         EncryptedSharedPreferences.getInstance();
 
     if (ValueT == bool) {
-      return securePref.getBool(preferenceKey) as ValueT?;
+      return securePref.getBool(_preferenceKey) as ValueT?;
     } else if (ValueT == String) {
-      return securePref.getString(preferenceKey) as ValueT?;
+      return securePref.getString(_preferenceKey) as ValueT?;
     } else if (ValueT == int) {
-      return securePref.getInt(preferenceKey) as ValueT?;
+      return securePref.getInt(_preferenceKey) as ValueT?;
     } else if (ValueT == double) {
-      return securePref.getDouble(preferenceKey) as ValueT?;
+      return securePref.getDouble(_preferenceKey) as ValueT?;
     } else {
       throw Exception("Unsupported type");
     }
@@ -32,13 +32,13 @@ class EncryptSharedPreferencesStorage<ValueT>
     if (value == null) {
       securePref.clear();
     } else if (ValueT == bool) {
-      securePref.setBool(preferenceKey, value as bool);
+      securePref.setBool(_preferenceKey, value as bool);
     } else if (ValueT == String) {
-      securePref.setString(preferenceKey, value as String);
+      securePref.setString(_preferenceKey, value as String);
     } else if (ValueT == int) {
-      securePref.setInt(preferenceKey, value as int);
+      securePref.setInt(_preferenceKey, value as int);
     } else if (ValueT == double) {
-      securePref.setDouble(preferenceKey, value as double);
+      securePref.setDouble(_preferenceKey, value as double);
     } else {
       throw Exception("Unsupported type");
     }

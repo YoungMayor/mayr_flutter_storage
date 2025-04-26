@@ -1,18 +1,22 @@
 part of '../mayr_storage.dart';
 
 class GetBoxStorage<ValueT> {
-  final String boxName;
-
-  GetBoxStorage(this.boxName);
+  final String _boxName;
 
   late final GetStorage _box = GetStorage();
 
-  void write(ValueT? value) => _box.write(boxName, value);
+  GetBoxStorage(this._boxName);
 
-  ValueT? read() => _box.read(boxName);
+  /// Delete stored record
+  void delete() => _box.remove(_boxName);
 
-  void delete() => _box.remove(boxName);
-
+  /// Listen for updates
   void listen(void Function(ValueT newValue) handler) =>
-      _box.listenKey(boxName, (newValue) => handler(newValue));
+      _box.listenKey(_boxName, (newValue) => handler(newValue));
+
+  /// Read value from storage
+  ValueT? read() => _box.read(_boxName);
+
+  /// Write value to storage
+  void write(ValueT? value) => _box.write(_boxName, value);
 }

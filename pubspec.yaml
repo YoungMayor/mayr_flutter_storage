@@ -2,7 +2,7 @@ name: mayr_storage
 description: >-
   Simple and unified storage solution for Flutter apps.
   Easily manage SharedPreferences, EncryptedSharedPreferences, and GetStorage with a clean, consistent API.
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/YoungMayor/mayr_flutter_storage
 repository: https://github.com/YoungMayor/mayr_flutter_storage
 issue_tracker: https://github.com/YoungMayor/mayr_flutter_storage/issues

@@ -9,6 +9,7 @@ part './drivers/shared_preferences_storage.dart';
 part './extension.dart';
 
 class MayrStorage {
+  /// Init MayrStorage
   static Future init() async {
     await GetStorage.init();
 
