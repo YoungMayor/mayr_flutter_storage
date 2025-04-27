@@ -50,7 +50,7 @@ A lightweight Flutter package for seamless access to SharedPreferences, SecureSt
 
     ```yaml
     dependencies:
-    mayr_storage: # check for the latest version on pub.dev
+        mayr_storage: # check for the latest version on pub.dev
     ```
 
 2. Instal the package:

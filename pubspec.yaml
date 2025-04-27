@@ -63,3 +63,10 @@ dev_dependencies:
   #
   # For details regarding fonts in packages, see
   # https://flutter.dev/to/font-from-package
+
+topics:
+  - storage
+  - utilities
+  - flutter
+  - productivity
+  - toolkit
