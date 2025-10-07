@@ -30,10 +30,34 @@ void main() {
       }
     });
 
+    test("Test doubles", () async {
+      for (var element in doubleCases()) {
+        await runTestForValue<double>(element);
+      }
+    });
+
     test("Test booleans", () async {
       for (var element in boolCases()) {
         await runTestForValue<bool>(element);
       }
+    });
+  });
+
+  group("Test unsupported types", () {
+    test("SharedPreferences should throw UnsupportedError for List", () async {
+      final storage = 'TEST_LIST_KEY'.storage<List<String>>();
+      expect(
+        () async => await storage.read(),
+        throwsA(isA<UnsupportedError>()),
+      );
+    });
+
+    test("SecureStorage should throw UnsupportedError for List", () async {
+      final storage = 'TEST_LIST_KEY'.secureStorage<List<String>>();
+      expect(
+        () async => await storage.read(),
+        throwsA(isA<UnsupportedError>()),
+      );
     });
   });
 }
