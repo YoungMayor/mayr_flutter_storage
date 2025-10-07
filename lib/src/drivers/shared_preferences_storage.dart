@@ -27,7 +27,8 @@ class SharedPreferencesStorage<ValueT> extends PreferencesStorage<ValueT> {
       return sharedPref.getDouble(_preferenceKey) as ValueT?;
     } else {
       throw UnsupportedError(
-          'Type $ValueT is not supported. Only String, int, double, and bool are supported.');
+        'Type $ValueT is not supported. Only String, int, double, and bool are supported.',
+      );
     }
   }
 
@@ -48,7 +49,8 @@ class SharedPreferencesStorage<ValueT> extends PreferencesStorage<ValueT> {
       await sharedPref.setDouble(_preferenceKey, value as double);
     } else {
       throw UnsupportedError(
-          'Type $ValueT is not supported. Only String, int, double, and bool are supported.');
+        'Type $ValueT is not supported. Only String, int, double, and bool are supported.',
+      );
     }
   }
 }

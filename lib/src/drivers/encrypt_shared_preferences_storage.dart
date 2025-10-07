@@ -30,7 +30,8 @@ class EncryptSharedPreferencesStorage<ValueT>
       return securePref.getDouble(_preferenceKey) as ValueT?;
     } else {
       throw UnsupportedError(
-          'Type $ValueT is not supported. Only String, int, double, and bool are supported.');
+        'Type $ValueT is not supported. Only String, int, double, and bool are supported.',
+      );
     }
   }
 
@@ -52,7 +53,8 @@ class EncryptSharedPreferencesStorage<ValueT>
       await securePref.setDouble(_preferenceKey, value as double);
     } else {
       throw UnsupportedError(
-          'Type $ValueT is not supported. Only String, int, double, and bool are supported.');
+        'Type $ValueT is not supported. Only String, int, double, and bool are supported.',
+      );
     }
   }
 }
