@@ -2,6 +2,9 @@ import 'package:faker/faker.dart';
 
 List<bool> boolCases() => [true, false];
 
+List<double> doubleCases() =>
+    List.generate(30, (index) => faker.randomGenerator.decimal() * (index + 1));
+
 List<int> intCases() => List.generate(
   30,
   (index) => faker.randomGenerator.integer(100000000) * index,
