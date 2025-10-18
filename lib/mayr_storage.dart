@@ -38,6 +38,6 @@
 /// // Delete
 /// await Storage.userToken.delete();
 /// ```
-library mayr_storage;
+library;
 
 export './src/mayr_storage.dart';

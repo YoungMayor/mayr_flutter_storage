@@ -7,10 +7,10 @@
 ![Pub.dev Publisher](https://img.shields.io/pub/publisher/mayr_storage?label=Publisher&style=plastic)
 ![Downloads](https://img.shields.io/pub/dm/mayr_storage.svg?label=Downloads&style=plastic)
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/YoungMayor/mayr_flutter_storage/ci.yaml?label=Build)
-![Issues](https://img.shields.io/github/issues/YoungMayor/mayr_flutter_storage.svg?label=Issues)
-![Last Commit](https://img.shields.io/github/last-commit/YoungMayor/mayr_flutter_storage.svg?label=Latest%20Commit)
-![Contributors](https://img.shields.io/github/contributors/YoungMayor/mayr_flutter_storage.svg?label=Contributors)
+![Build Status](https://img.shields.io/github/actions/workflow/status/MayR-Labs/mayr_flutter_storage/ci.yaml?label=Build)
+![Issues](https://img.shields.io/github/issues/MayR-Labs/mayr_flutter_storage.svg?label=Issues)
+![Last Commit](https://img.shields.io/github/last-commit/MayR-Labs/mayr_flutter_storage.svg?label=Latest%20Commit)
+![Contributors](https://img.shields.io/github/contributors/MayR-Labs/mayr_flutter_storage.svg?label=Contributors)
 
 # 💼 Mayr Flutter Storage Util
 
@@ -242,6 +242,18 @@ See the [LICENSE](LICENSE) file for more details.
 ## 🌟 Support
 
 If you find this package helpful, please consider giving it a ⭐️ on GitHub — it motivates and helps the project grow!
+
+---
+
+## 🏢 About MayR Labs
+
+This package is maintained with ❤️ by **MayR Labs**.
+
+- **Website**: [mayrlabs.com](https://mayrlabs.com)
+- **GitHub**: [github.com/MayR-Labs](https://github.com/MayR-Labs)
+- **Repository**: [github.com/MayR-Labs/mayr_flutter_storage](https://github.com/MayR-Labs/mayr_flutter_storage)
+
+We build high-quality Flutter packages and solutions to make mobile development easier and more enjoyable for developers worldwide.
 
 You can also support by:
 - Sharing the package with your friends, colleagues, and tech communities.
