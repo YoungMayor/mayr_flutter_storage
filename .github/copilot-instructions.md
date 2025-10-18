@@ -7,7 +7,7 @@ This is a Flutter package that provides a unified storage API for SharedPreferen
 - **Organization**: MayR Labs
 - **GitHub**: https://github.com/MayR-Labs
 - **Website**: https://mayrlabs.com
-- **Repository**: https://github.com/MayR-Labs/mayr_flutter_storage
+- **Repository**: https://github.com/MayR-Labs/flutter_storage
 
 ## Code Style & Conventions
 
